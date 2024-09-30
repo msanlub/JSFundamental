@@ -6,17 +6,10 @@ Practicar el uso de bucles con condición de parada.
 */
 let num;
 
-while (true) {
+do {
     num = prompt("Indica un número (negativo para parar): ");
+    num = +num;
 
-    num = Number(num);
+} while (isNaN(num) || num >= 0)
 
-    if (isNaN(num)) {
-        alert("Tienes que indicar un número válido!!");
-        continue;
-    }
-    if (num < 0) {
-        break;
-    }
-}
 

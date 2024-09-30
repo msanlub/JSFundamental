@@ -8,16 +8,24 @@ Practicar el uso de estructuras condicionales y tomar decisiones con base en los
 
 console.log("EJERCICIO 8")
 
-let edad = Number(prompt("Indique su edad: "));
+let edad;
 let mensajeEdad;
+
+do{
+    edad = prompt("Indique su edad: ");
+    edad = +edad;
+} while (isNaN(edad) || edad <= 0 || !Number.isInteger(edad))
+
+
 if (edad >= 18){
-    if (edad >= 18 && edad <= 25){
-        mensajeEdad = "Estás en la edad perfecta."
-        console.log(mensajeEdad)
-    }else{
-        mensajeEdad = "Eres un pezqueñín."
+    console.log("Mayor de edad.")
+        if (edad >= 18 && edad <= 25){
+            mensajeEdad = "Estás en la edad perfecta."
+            console.log(mensajeEdad)
+        } 
+    }else {
+        console.log("Menor de edad.")
     }
-}
 
 
 console.log("------------------------------------------")

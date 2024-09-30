@@ -5,8 +5,15 @@ Objetivos:
 Introducir el uso del operador ternario (condición ? expr1 : expr2).
 */
 
-const numeroPrompt = Number(prompt("Indica un número: "));
+let numero;
 
-const comprobacion = numeroPrompt > 0 ? "positivo" : numeroPrompt < 0 ? "negativo" : "cero";
+do {
+    let numeroPrompt = prompt("Indica un número: ");
+    numero = Number(numeroPrompt);
 
-alert(`El número ${numeroPrompt} es ${comprobacion}.`);
+} while ( isNaN(numero) );
+
+
+const comprobacion = numero > 0 ? "positivo" : numero < 0 ? "negativo" : "cero";
+
+alert(`El número ${numero} es ${comprobacion}.`);

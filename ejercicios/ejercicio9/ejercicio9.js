@@ -6,13 +6,15 @@ Practicar con condicionales anidados (if...else).
 */
 console.log("EJERCICIO 9")
 
-const nacionalidad = "española";
+const NACIONALIDAD = "española";
 
-const edadUsuario = Number(prompt("Indique su edad: "));
-const nacion = prompt("Indique su nacionalidad: ");
+const EDADUSUARIO = Number(prompt("Indique su edad: "));
+const NACION = prompt("Indique su nacionalidad: ");
 
-if (edadUsuario >= 18 && nacion == nacionalidad){
-    alert("Sí puedes votar.")
+if (EDADUSUARIO >= 18){
+    if ( NACION == NACIONALIDAD){
+        alert("Sí puedes votar.")
+    }
 }else{
     alert("No puedes votar.")
 }

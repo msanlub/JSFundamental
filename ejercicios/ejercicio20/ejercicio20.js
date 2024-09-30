@@ -8,12 +8,15 @@ Practicar el manejo de cadenas de texto.
 Utilizar estructuras de control para verificar condiciones específicas.
 */
 
-const FRASE = "La ruta nos aporto otro paso natural";
+let frase = prompt("Indica un texto palíndromo: \n (ejemplo: 'La ruta nos aporto otro paso natural'");
 
-let fraseInvertida = FRASE.split(" ");
+let fraseSeparador = frase.toLowerCase().split(" ").join("");
 
-for(i=0; i < fraseInvertida.length; i++){
-    for (j=0; j < i ; j++){
-        
-    }
+let fraseInvertida = fraseSeparador.split("").reverse().join("");
+
+if (fraseInvertida === fraseSeparador){
+    console.log("Es palindromo.")
+}else{
+    console.log("No es palindromo.")
 }
+

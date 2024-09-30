@@ -13,7 +13,7 @@ Gestionar correctamente las cadenas de texto, incluyendo caracteres especiales.
 console.log("EJERCICIO 7")
 console.log("Acordarse de activar las ventanas emergentes para esta url, gracias!")
 
-let mensaje = saludo + "Qué fácil es incluir 'comillas simples' y " + '"comillas dobles".';
+let mensaje = "Qué fácil es incluir 'comillas simples' y \n" + '"comillas dobles".';
 
 // Abrimos una ventana emergente (popup) con las dimensiones especificadas
 let popup = window.open('file:///home/marta/DAW2/CLIENTE/JSFundamental/index.html', 'popup', 'width=400,height=200');

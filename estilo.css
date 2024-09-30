@@ -1,58 +1,35 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Reset de estilos básicos */
+* {
     margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    color: #5b5a8d;
-}
-
-h2 {
-    color: #73929b;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    color:#5c5b80
-}
-
-li p {
-    font-size: 16px;
-    line-height: 1.2;
-    color:#555 ;
-    padding: 15px;
-}
-
-ul {
-    list-style: none;
-    list-style-type: '♦';
-    padding-left: 20px;
     padding: 0;
+    box-sizing: border-box;
 }
 
-li {
-    margin: 10px 0;
-    background-color: rgb(183, 212, 245);
+/* Estilo del body */
+body {
+    font-family: Arial, sans-serif;  /* Tipografía básica */
+    line-height: 1.6;                /* Mejora la legibilidad */
+    background-color: #f4f4f4;       /* Color de fondo suave */
+    color: #333;                     /* Color de texto */
+    padding: 20px;                   /* Espaciado interno */
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
+/* Estilo para el título principal */
+h1 {
+    font-size: 2em;                  /* Tamaño de fuente grande */
+    margin-bottom: 20px;             /* Espaciado inferior */
+    color: #4CAF50;                  /* Color verde */
 }
 
-a:hover {
-    color: #0056b3;
+/* Estilo para los párrafos */
+p {
+    margin-bottom: 20px;             /* Espaciado inferior entre párrafos */
+    font-size: 1.1em;                /* Tamaño de fuente ligeramente mayor */
+    line-height: 1.5;                /* Mejora la legibilidad */
+    color: #555;                     /* Color de texto más oscuro para mejor contraste */
 }
 
-/* Estilo para la sección */
-.section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Estilo para el texto en negrita */
+b {
+    color: #333;                     /* Color de texto en negrita */
 }

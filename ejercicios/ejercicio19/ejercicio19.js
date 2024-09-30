@@ -6,16 +6,17 @@ Reforzar el uso de bucles para cálculos matemáticos.
 */
 
 let numb;
-let factorial;
+let factorial = 1;
 
 do {
     numb = prompt("Indica un número entero: ");
+    numb = +numb;
 
-}while (isNaN(numb) || numb <= 0 || numb.includes('.'));
+}while (isNaN(numb) || numb <= 0 || !Number.isInteger(numb));
 
-numb = +numb;
-for (i = 1;i < numb;i++){
-    factorial = numb*i;
+
+for (i = 1; i <= numb; i++){
+    factorial *= i;
 }
 
 console.log("El factorial de " + numb + " es: " + factorial);

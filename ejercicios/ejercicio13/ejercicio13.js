@@ -7,16 +7,12 @@ Controlar y validar la entrada del usuario.
 
 let num;
 
-while (true) {
+do {
     num = prompt("Indica un número: ");
-
     num = +num;
 
     if (isNaN(num)) {
         alert("Tienes que indicar un número!!");
-        continue;
     }
-    if (num) {
-        break;
-    }
-}
+
+} while (isNaN(num))
